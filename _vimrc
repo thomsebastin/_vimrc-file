@@ -6,7 +6,7 @@ filetype off                  " required
 " Put your non-Plugin stuff after this line
 " This calls the pathogen file to pull plugins
 execute pathogen#infect()
-Helptags "needed for updating helpdocs
+:Helptags "needed for updating helpdocs
 
 " To turn syntax highlighting on
 syntax on
@@ -14,8 +14,8 @@ filetype plugin indent on    " required
 filetype plugin on    " required by nerd commenter
 
 
-" setting the colorscheme to harlequin
-colorscheme harlequin
+" setting the colorscheme
+colorscheme seti
 
 " remove wrap
 set nowrap
@@ -35,6 +35,16 @@ set expandtab       " tabs are spaces
 
 " ====================================
 "
+"
+"folding settings
+set foldmethod=syntax   "fold based on indent
+set foldnestmax=10      "deepest fold is 10 levels
+set nofoldenable        "dont fold by default
+set foldlevel=1         "this is just what i use
+let javaScript_fold = 1         " JavaScript
+
+"some additional settings for javascript
+let g:javascript_enable_domhtmlcss = 1
 
 " setting the font type
 set guifont=Lucida\ Console:h11
