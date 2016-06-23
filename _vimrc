@@ -15,7 +15,7 @@ filetype plugin on    " required by nerd commenter
 
 
 " setting the colorscheme
-colorscheme seti
+colorscheme codeschool
 
 " remove wrap
 set nowrap
